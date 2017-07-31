@@ -78,19 +78,19 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, the number of epochs were set to 10. Different batch sizes were tested to obtain one that yielded higher accuracy (batch size = 100). The mean and standard deviation were set  to default values of 1 and 0.1 respectively. The Adam optimizer was used to optimize the function.
+To train the model, the number of epochs were set to 50. Different batch sizes were tested to obtain one that yielded higher accuracy (batch size = 150). The mean and standard deviation were set  to default values of 1 and 0.1 respectively. The Adadelta optimizer was used to optimize the function.
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* validation set accuracy of 89.3%
-* test set accuracy of 87.4%
+* validation set accuracy of 94%
+* test set accuracy of 92.88%
 
 If a well known architecture was chosen:
 * What architecture was chosen? LeNet5 by Yan LeCun
 * Why did you believe it would be relevant to the traffic sign application? The Lenet5  was chosen due to its efficient architecture for CNN problems. This architecture was also discussed in the class.
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well? The model was able to detect new images with satisfactory results. Although additional image transformations functions may be required to improve the model's results
-* Which parameters were tuned? How were they adjusted and why? The batch size was changed to increase the validation accuracy. The learning rate was also decreased from 0.01 to 0.005 due to large jumps between the accuracy results reported by epochs.
+* Which parameters were tuned? How were they adjusted and why? The batch size was changed to increase the validation accuracy. The learning rate was also decreased from 0.005 to 0.5 due to large jumps between the accuracy results reported by epochs.
 
 
 ### Test a Model on New Images
@@ -122,12 +122,12 @@ On
 |:---------------------:|:---------------------------------------------:|
 | Right-of-way | Right-of-way (1st prediction)|
 | Road work     | Road work (1st prediction) 										|
-| STOP					| STOP	(1st prediction)									|
+| STOP					| STOP	(2nd prediction)									|
 | 60 km/h	   		| (Failed to predict accurate sign)				 				|
 | General caution			| General caution (1st prediction)      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 87.4%
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 92.88%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -137,11 +137,11 @@ For the first image, the top five soft max probabilities were
 
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 9.99815166e-01         			| Right-of-way at the next intersection   									|
-| 1.47279687e-04     				| Beware of ice/snow 										|
-| 3.56463752e-05					| No passing for vehicles over 3.5 metric tons											|
-| 8.03059834e-07	      			| Double curve					 				|
-| 5.86945305e-07			    | Slippery Road      							|
+| 1.0         			| Right-of-way at the next intersection   									|
+| 1.11383153e-10     				| General Caution 										|
+| 1.58815391e-11					| Beware of ice/snow											|
+| 1.11147474e-12	      			| Pedestrians				 				|
+| 2.08854134e-14		    | Roundabout mandatory      							|
 
 The other images and their probabilities can be obtained from the Ipython notebook.
 
