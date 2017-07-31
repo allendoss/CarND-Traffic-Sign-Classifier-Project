@@ -117,10 +117,10 @@ The above image has very high noise in background
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
-On
+
 | Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| Right-of-way | Right-of-way (1st prediction)|
+| Right-of-way | Right-of-way (1st prediction) |
 | Road work     | Road work (1st prediction) 										|
 | STOP					| STOP	(1st prediction)									|
 | 60 km/h	   		| (Failed to predict accurate sign)				 				|
