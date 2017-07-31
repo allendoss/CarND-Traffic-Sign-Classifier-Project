@@ -102,19 +102,19 @@ Here are five German traffic signs that I found on the web:
 ![alt text](newImages/1.png)
 
 The above image is hard to classify due to the noise in the background-clouds
----
+
 ![alt text](newImages/2.png)
 
 The above image is hard to classify due to additional artifacts on the sign board
----
+
 ![alt text](newImages/3.png)
 
 The above image is hard to classify due to the noise in the background-branches
----
+
 ![alt text](newImages/4.png)
 
-This image is relatively easy to classify
----
+The above image is relatively easy to classify
+
 ![alt text](newImages/5.png)
 
 The above image has very high noise in background
