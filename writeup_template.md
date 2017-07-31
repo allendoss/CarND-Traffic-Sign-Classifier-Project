@@ -120,10 +120,10 @@ Here are the results of the prediction:
 On
 | Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| Right-of-way at the next intersection| Right-of-way at the next intersection(1st prediction)   									|
-| Road work    			| Road work (1st prediction) 										|
+| Right-of-way | Right-of-way (1st prediction)|
+| Road work     | Road work (1st prediction) 										|
 | STOP					| STOP	(1st prediction)									|
-| 60 km/h	      		| (Failed to predict accurate sign)				 				|
+| 60 km/h	   		| (Failed to predict accurate sign)				 				|
 | General caution			| General caution (1st prediction)      							|
 
 
@@ -133,7 +133,7 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 22nd cell of the Ipython notebook.
 
-For the first image, the top five soft max probabilities were 
+For the first image, the top five soft max probabilities were
 
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
