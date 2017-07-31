@@ -100,18 +100,23 @@ If a well known architecture was chosen:
 Here are five German traffic signs that I found on the web:
 
 ![alt text](newImages/1.png)
+
 The above image is hard to classify due to the noise in the background-clouds
 ---
 ![alt text](newImages/2.png)
+
 The above image is hard to classify due to additional artifacts on the sign board
 ---
 ![alt text](newImages/3.png)
+
 The above image is hard to classify due to the noise in the background-branches
 ---
 ![alt text](newImages/4.png)
+
 This image is relatively easy to classify
 ---
 ![alt text](newImages/5.png)
+
 The above image has very high noise in background
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
